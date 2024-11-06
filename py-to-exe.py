@@ -40,7 +40,7 @@ root.title("System Repair")
 root.geometry("300x200")
 
 # Display the message
-label = tk.Label(root, text="This PC needs to be repaired", font=("Arial", 14))
+label = tk.Label(root, text="This PC needs to be repaired!!!", font=("Arial", 14))
 label.pack(pady=20)
 
 # Create a repair button
