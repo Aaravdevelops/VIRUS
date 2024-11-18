@@ -37,7 +37,7 @@ for /L %%i in (1,1,30) do (
 # Set up the GUI
 root = tk.Tk()
 root.title("System Repair")
-root.geometry("300x200")
+root.geometry("1024x1024")
 
 # Display the message
 label = tk.Label(root, text="This PC needs to be repaired!!!", font=("Arial", 14))
